@@ -217,12 +217,15 @@
 // }
 // power1(3, 5);
 
-let a = 22;
-let fonk = function () {
-  a = 33;
-  let b = 33;
-  return a + b;
+// let a = 22;
+// let fonk = function () {
+//   a = 33;
+//   let b = 33;
+//   return a + b;
   
-};
-fonk();
+// };
+// fonk();
+
+
+
 
