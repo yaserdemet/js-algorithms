@@ -19,3 +19,9 @@ console.log(b);
 
 // Second Way With For Loop
 
+for(let i = a.length-1; i >=0 ; i--){
+    let x = Math.min(...a);
+    b.push(x);
+    a.splice(a.indexOf(x),1);
+}
+console.log(b);
