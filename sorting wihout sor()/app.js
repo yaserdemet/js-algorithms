@@ -3,25 +3,32 @@
 // Expected output:
 // [2, 11, 12, 45, 77, 99, 333, 999, 8982]
 
-let a = [999, 333, 2, 8982, 12, 45, 77, 99, 11];
-let b = [];
+// let a = [999, 333, 2, 8982, 12, 45, 77, 99, 11];
+// let b = [];
 
-while(true){
-    let x = Math.min(...a);
-    b.push(x);
-    a.splice(a.indexOf(x),1);
-    if(a.length == 0){
-        break;
-    }
-}
-console.log(b);
-
+//  while (true) {
+//    let x = Math.min(...a);
+//    b.push(x);
+//    a.splice(a.indexOf(x), 1);
+//    if (a.length == 0) {
+//      break;
+//    }
+//  }
+//  console.log(b);
+// console.log(a.length);
 
 // Second Way With For Loop
 
-for(let i = a.length-1; i >=0 ; i--){
-    let x = Math.min(...a);
-    b.push(x);
-    a.splice(a.indexOf(x),1);
-}
-console.log(b);
+//for(let i = a.length-1; i >=0 ; i--){
+//     let x = Math.min(...a);
+//     b.push(x);
+//     a.splice(a.indexOf(x),1);
+// }
+// console.log(b);
+
+//  for(let i = 0; i < a.length ; i ++){
+//      let x = Math.min(...a);
+//      b.push(x);
+//      a.splice(a.indexOf(x) , 1)
+//  }
+//  console.log(b);
