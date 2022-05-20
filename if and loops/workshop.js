@@ -263,11 +263,20 @@ console.log("****** for of kullanımı *******");
 // }
 // console.log(emptyArray);
 
-const numbers = [1, 2, 3, 4, 5]
-let sum = 0
-for (const num of numbers) {
-  sum = sum + num  
-	// can be also shorten like this, sum += num
-  // after this we will use the shorter synthax(+=, -=, *=, /= etc)
-}
-console.log(sum)
+// const numbers = [1, 2, 3, 4, 5]
+// let sum = 0
+// for (const num of numbers) {
+//   sum = sum + num  
+// 	// can be also shorten like this, sum += num
+//   // after this we will use the shorter synthax(+=, -=, *=, /= etc)
+// }
+// console.log(sum)
+
+for(let i = 0; i <= 5; i++){
+    if(i == 3){
+      continue
+    }
+    console.log(i)
+  }
+  
+  // 0 1 2 4 5
