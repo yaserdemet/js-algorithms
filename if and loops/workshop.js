@@ -262,3 +262,12 @@ console.log("****** for of kullanımı *******");
 //   emptyArray.push(x.toUpperCase());
 // }
 // console.log(emptyArray);
+
+const numbers = [1, 2, 3, 4, 5]
+let sum = 0
+for (const num of numbers) {
+  sum = sum + num  
+	// can be also shorten like this, sum += num
+  // after this we will use the shorter synthax(+=, -=, *=, /= etc)
+}
+console.log(sum)
