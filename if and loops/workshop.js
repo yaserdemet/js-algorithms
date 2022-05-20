@@ -222,10 +222,43 @@
 //   a = 33;
 //   let b = 33;
 //   return a + b;
-  
+
 // };
 // fonk();
 
+console.log("****** for of kullanımı *******");
 
+//for of kullanımı for a göre daha kullanışlıdır.
 
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for(const myNumbers of numbers){
+//   console.log(myNumbers);
+// }
 
+// for (const newNumbers of numbers) {
+//   console.log(newNumbers ** 2);
+// }
+
+// const webTechs = [
+//    "HTML",
+//   'CSS',
+//   'JavaScript',
+//   'React',
+//   'Redux',
+//   'Node',
+//   'MongoDB'
+// ]
+// for(const x of webTechs){
+//     console.log(x.toLocaleUpperCase());
+// }
+
+// for(const x of webTechs){
+//     console.log(x[0]);
+// }
+
+// const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
+// const emptyArray = [];
+// for (const x of countries) {
+//   emptyArray.push(x.toUpperCase());
+// }
+// console.log(emptyArray);
