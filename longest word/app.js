@@ -15,6 +15,12 @@
 //  let x =  findLongestWordLength("The quick brown fox jumped over the lazy dog");
 //  console.log(x);
 
+
+
+
+
+
+
 // Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
 
 // Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
@@ -64,17 +70,48 @@
 
 
 
+
+
+
 // Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
 
+// function repeatStringNumTimes(str, num) {
+//   let empty = ""
+//   for(let i = 0; i < num; i++){
+//       empty += str
+//   }
+
+//   return empty;
+// }
+
+// repeatStringNumTimes("abc", 3);
+
+// Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a ... ending.
+
+// function truncateString(str, num) {
+//   if (str.length > num) {
+//     return str.slice(0, num) + "...";
+//   }
+// }
+// console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
 
 
-function repeatStringNumTimes(str, num) {
-  let empty = ""
-  for(let i = 0; i < num; i++){
-      empty += str
-  }
 
-  return empty;
-}
 
-repeatStringNumTimes("abc", 3);
+
+
+
+//Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+// For the purpose of this exercise, you should also capitalize connecting words like the and of.
+
+// function titleCase(str) {
+//   let x = str.toLowerCase().split(" ");
+//   let y = [];
+//   for (let i = 0; i < x.length; i++) {
+//     y.push(x[i][0].toUpperCase() + x[i].slice(1));
+//   }
+
+//   return y.join(" ");
+// }
+
+// console.log(titleCase("I'm a little tea pot"));
