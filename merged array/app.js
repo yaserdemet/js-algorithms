@@ -20,4 +20,6 @@
 const firstOne = [1,3,5,7,9];
 const secondOne = [2,4,6,8,10];
 const merged = [...firstOne,...secondOne];
-console.log(merged);
+
+console.log(merged.sort((a,b) => a-b));
+//? only using sort() just sort array as strings.
