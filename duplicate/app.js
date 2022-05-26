@@ -21,14 +21,14 @@
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))(("
 
-let str1 = "recede";
-str1 = str1.toLowerCase();
-let result = [];
-str1.split("").forEach(function (char) {
-  if (str1.split(char).length > 2) {
-    result.push(")");
-  } else {
-    result.push("(");
-  }
-});
-console.log(result.join(""));
+// let str1 = "recede";
+// str1 = str1.toLowerCase();
+// let result = [];
+// str1.split("").forEach(function (char) {
+//   if (str1.split(char).length > 2) {
+//     result.push(")");
+//   } else {
+//     result.push("(");
+//   }
+// });
+// console.log(result.join(""));
