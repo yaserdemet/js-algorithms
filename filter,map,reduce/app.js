@@ -71,3 +71,15 @@
 
 // let total = salary.reduce((x , y ) => x + y);
 // console.log(total);
+
+
+
+
+// ? QUESTION1: maaslar dizisi icin maasi ortalamanin altinda olanlara %20 zam yaparak zamli maaslari ayrı bir diziye atalım.
+
+const maaslar = [3000, 5000, 4000, 6000, 6500];
+
+const avarage = maaslar.reduce((x , y)=> x+y,0) / maaslar.length;   //! reduce ile ortalamayı buldum.
+console.log(avarage);
+const expend = maaslar.filter((x) => x < avarage).map((y) => (y*1.2))  //! filter ile ortalama altında olanları bul ve map ile zam yap.
+console.log(expend);
