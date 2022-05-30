@@ -27,3 +27,10 @@ kisiler2.filter((x) => x.job === "developer").map((y)=> empty2.push(y.name) +  e
 console.log(empty2);
 
 
+
+const newBee = kisiler2.filter((x) => x.job ==="developer").map((y) => ({yeniYas : y.age , yeniIsim : y.name}));
+//! bunu bir nesnede saklayın dediği için mapten sonra {} ile yeni bir obje oluşturduk. 
+console.log(newBee);
+
+
+
