@@ -1,5 +1,7 @@
 let z = [ 0, 0, 0.55, 0, 0 ]
 
+// ! find the unique one !
+
 let empty = []
 let empty2 = []
 function unq(arr) {
