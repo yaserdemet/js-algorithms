@@ -76,3 +76,56 @@
 
 // }
 // console.log(remDub([1,2,3,5,5,5,5,5,2,2,2,2]));
+
+// * What is the difference between for in and for of ? 
+
+// const myArr = [1,2,3,4,5,6]
+// let empty = []
+
+// for(let i in myArr){
+        
+//     empty.push(myArr[i]  + 1)
+// }
+// console.log(empty);
+
+
+// //! in kullanırsa indexleme ile ulasılır , of ta ise sadece variable ile ulasılır.
+
+// const yourArr = [1,2,3,4,5,6]
+// let emptyy = []
+// for(let i of yourArr){
+//     emptyy.push(i + 1)
+// }
+// console.log(emptyy)
+
+
+//* Question5: Check Whether a String is Palindrome or Not
+
+// const palindrome = (str) => {
+    
+//     const arrStr = str.split("").reverse().join("")
+//     if(str === arrStr){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+// console.log(palindrome("oko"));
+
+
+// function pal(str){
+//     let len = str.length
+//     let empty = ""
+//     for(let i = len - 1; i>=0 ; i --){
+//      empty += str[i]     
+//     }
+//     if(str === empty){
+//         console.log(`${str} is palindrome word`)
+//     }
+//     else{
+//         console.log(`${str} is not palindrome`);
+//     }
+//     return empty
+// }
+// console.log(pal("oko"))
