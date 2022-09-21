@@ -129,3 +129,58 @@
 //     return empty
 // }
 // console.log(pal("oko"))
+
+const x = NaN
+console.log(typeof(x))
+
+
+let a = 100 / "Apple";
+console.log(isNaN(x));
+
+// There are 3 JavaScript methods that can be used to convert variables to numbers:
+
+//* The Number() method
+//* The parseInt() method
+//* The parseFloat() method
+
+
+//? Parse int sadece ilk gördüğü sayıyı çevirir
+// parseInt("-10"); 10 
+// parseInt("-10.33"); 10
+// parseInt("10"); 10
+// parseInt("10.33"); 10
+// parseInt("10 20 30");10
+// parseInt("10 years"); 10
+// parseInt("years 10"); NaN
+
+
+// ? parseFloat yanlızca ilk gördüğü str yi number a çevirir.
+
+// parseFloat("10") 10 
+// parseFloat("10.33") 10
+// parseFloat("10 6") 
+// parseFloat("10 years") 
+// parseFloat("years 10");  
+
+// const myArr = [ 1, 2,3,4,5]
+// const p = Array.isArray(myArr)
+// console.log(p)
+// console.log(typeof(myArr));
+//! arraylerin type ı objecttir.
+
+//? array to string 
+// // console.log(myArr.toString())
+// // console.log(myArr.join(" * "));
+
+// console.log(myArr.pop() , myArr)
+// console.log(myArr.shift() , myArr);
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+// * The first parameter (2) defines the position where new elements should be added (spliced in).
+
+// * The second parameter (0) defines how many elements should be removed.
+
+// * The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+console.log(fruits)
