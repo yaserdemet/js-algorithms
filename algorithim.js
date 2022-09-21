@@ -184,3 +184,38 @@ fruits.splice(2, 0, "Lemon", "Kiwi");
 
 // * The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
 console.log(fruits)
+
+
+// const points = [40, 100, 1, 5, 25, 10]
+// console.log(points.sort((a,b) =>  b-a));
+// console.log(Math.max.apply(null , points))
+
+
+// const cars = [
+//     {type:"Volvo", year:2016},
+//     {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}
+//   ];
+
+// console.log(cars.sort((a,b) => a.year - b.year));
+
+// const numbers = [45, 4, 9, 16, 25]
+// let empty = 0
+
+// function myFunction (item) {
+//     empty += item
+// }
+
+// numbers.forEach(myFunction)
+// const filtered = numbers.filter((item) => item > 18 )
+// console.log(empty);
+// console.log(filtered)
+
+// ? The every() method checks if all array values pass a test.
+// const numbers = [45, 4, 9, 16, 25 , 4]
+// const data = numbers.every((item,index) => item > 3)
+// console.log(data);
+
+// ? indexOf ikinci parametresi hangi index ten baslaması gerektiğini belirtir
+// const indexx = numbers.indexOf(4,4) 
+// console.log(indexx)
