@@ -219,3 +219,9 @@ console.log(fruits)
 // ? indexOf ikinci parametresi hangi index ten baslaması gerektiğini belirtir
 // const indexx = numbers.indexOf(4,4) 
 // console.log(indexx)
+
+
+// ? How to merge two array without dublicate
+const myArray1 = [5, 7, 9];
+const myArray2 = [9, 8, 5, 10];
+const uniqueArrs = [...new Set(...myArray1, ...myArray2)]
