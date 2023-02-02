@@ -225,3 +225,25 @@ console.log(fruits)
 const myArray1 = [5, 7, 9];
 const myArray2 = [9, 8, 5, 10];
 const uniqueArrs = [...new Set(...myArray1, ...myArray2)]
+
+//? How to make recursive treeList
+
+ const groupByParentId = (data: any) => {
+    let result: any = {};
+    let separateList: any[] = [];
+    for (let i = 0; i < data?.length; i++) {
+      if (data[i].parentId === 0) {
+        separateList.push(data[i]);
+        continue;
+      }
+      if (!result[data[i].parentId]) {
+        result[data[i].parentId] = {
+          id: data[i].parentId,
+          children: [],
+        };
+      }
+      result[data[i].parentId].children.push(data[i]);
+    }
+    return [...separateList, ...Object.values(result)];
+  };
+
