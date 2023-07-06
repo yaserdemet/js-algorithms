@@ -247,3 +247,12 @@ const uniqueArrs = [...new Set(...myArray1, ...myArray2)]
     return [...separateList, ...Object.values(result)];
   };
 
+// ? How to find missing number in array 1 to 100
+const findMissingOne = (givenArray : number[]) => {
+    const allSum = 100 * (100 + 1) / 2
+    const sum = givenArray.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    },0)
+    return allSum - sum;
+};
+console.log(findMissingOne([1,2,3,...100]))
