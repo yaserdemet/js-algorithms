@@ -256,3 +256,10 @@ const findMissingOne = (givenArray : number[]) => {
     return allSum - sum;
 };
 console.log(findMissingOne([1,2,3,...100]))
+
+// ? write a function that takes an array then get array's item's square if it is even and find their sum;
+const findSquareOfEven = (arr : number[]) => {
+    const finded = arr.filter((item) => item % 2 === 0).map((item) => item ** 2).reduce((accumulator,currentValue) => accumulator + currentValue , 0)
+    return finded;
+} 
+console.lo(findSquareOfEven([1,2,3,4,5,6]))
