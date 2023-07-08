@@ -263,3 +263,23 @@ const findSquareOfEven = (arr : number[]) => {
     return finded;
 } 
 console.lo(findSquareOfEven([1,2,3,4,5,6]))
+
+
+// Create an array 1 to n then calculate time function to execute array' s item to write console.
+
+const crateAnArray = (n : number) => {
+    const data = Array.from(Array(n).keys())
+    return data;
+}
+
+const calculateTime = () => {
+
+    console.time()
+    console.log("Execute Stared");
+    for (let i in data){
+        console.log(data[i])
+    }
+    console.timeEnd()
+    console.log("Execution Ended)
+    
+}
