@@ -283,3 +283,16 @@ const calculateTime = () => {
     console.log("Execution Ended)
     
 }
+
+
+// Sort given array according to given keys which contains object 
+const sortArr = (array, keyToSort) => {
+    const data = array.sort((a,b) => a[keyToSort] - b[keyToSort]);
+    return data;
+}
+const arr = [
+  { name: 'John', age: 30, gender: 'male' },
+  { name: 'Jane', age: 25, gender: 'female' },
+  { name: 'Adam', age: 35, gender: 'male' }
+];
+console.log(sortArr(arr, age)) 
