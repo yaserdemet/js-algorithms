@@ -296,3 +296,18 @@ const arr = [
   { name: 'Adam', age: 35, gender: 'male' }
 ];
 console.log(sortArr(arr, age)) 
+
+another solution : 
+
+const sortArr = (arr, key) => {
+    const sortedOne = arr.sort((a,b) => {
+        if(a[key] < b[key]){
+            return -1 }
+        else if (a[key] > b[key]){
+            return 1;
+        }
+        else {
+            return 0 
+        }
+    })
+}
