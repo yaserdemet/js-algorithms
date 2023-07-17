@@ -311,3 +311,17 @@ const sortArr = (arr, key) => {
         }
     })
 }
+
+// Dynamically add external contents to your data using object bracket notation...
+
+// One of my most use case of the bracket notation is when I need to assign extra or missing fields dynamically to a mapped data.
+
+// For instance, there are cases where the data you get from the backend does not include some important fields, like symbols,
+
+// images or icons, and you need to display these missing fields on the UI...
+
+const vendors = [ {name : "Mozz", country  : "Turkey"},{name : "Phantom", country  : "Italy"},{name : "Norm", country  : "Greece"} ]
+const curriencies = {Turkey : "tl", Italy : "euro", Greece : "euro"}
+const addNewKey vendors.map((item) => {...item, curriencies : curriencies[item.country] })
+console.log(addNewKey)
+
