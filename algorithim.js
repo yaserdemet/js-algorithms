@@ -322,6 +322,9 @@ const sortArr = (arr, key) => {
 
 const vendors = [ {name : "Mozz", country  : "Turkey"},{name : "Phantom", country  : "Italy"},{name : "Norm", country  : "Greece"} ]
 const curriencies = {Turkey : "tl", Italy : "euro", Greece : "euro"}
-const addNewKey vendors.map((item) => {...item, curriencies : curriencies[item.country] })
+const addNewKey =  vendors.map((item) => ({...item, curriencies : curriencies[item.country] }))
+// we use parentheses () around the object literal {...item, curriencies: curriencies[item.country] }. This is because when you use curly braces {} 
+// inside an arrow function without parentheses, JavaScript considers it as a block of code instead of an object literal.
+// So, adding parentheses helps to explicitly define that we are returning an object literal from the arrow function.
 console.log(addNewKey)
 
